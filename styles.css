@@ -1,0 +1,78 @@
+/* Color palette: Dark blue #252839, Dark gray #677077,
+Light gray #b5b5b7, Yellow #f2b632 */
+
+body{
+  background-color: white;
+  color: black;
+  font-family: helvetica, sans-serif;
+}
+
+/* Set grid parameters for About page. */
+
+.grid-container{
+  display: grid;
+  width: 100%
+  grid-template-areas: "head head"
+                      "main main"
+                      "foot foot"
+}
+
+.item1{
+  grid-area: "head";
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: #ffffff;
+  height: 300px
+  align-items: center;
+}
+
+.item2{
+  grid-area: "main";
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: red;
+  height: 1200px;
+}
+
+.item3{
+  grid-area: "foot";
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: yellow;
+  height: 50px;
+}
+
+.header {
+  text-align: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    font-family: verdana, san-serif;
+}
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+  float: left;
+  color: #252839;
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: #f2b632;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #677077;
+    color: #f2b632;
+}
